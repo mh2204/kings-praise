@@ -1,0 +1,88 @@
+.section {
+    padding: 5rem 0;
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.lead-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+    font-style: italic;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.time {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.service-desc {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight-card {
+    background: white;
+    border: 1px solid #eee;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.highlight-card .btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.highlight-card .btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}

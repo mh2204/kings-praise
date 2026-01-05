@@ -1,0 +1,111 @@
+.navbar {
+    background: var(--white);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: var(--shadow);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-logo {
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-links:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.3s ease;
+        background: var(--white);
+        gap: 0;
+        box-shadow: var(--shadow);
+        padding-bottom: 2rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 1.5rem;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links:hover {
+        background-color: var(--primary);
+        color: white;
+        border-radius: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--text-dark);
+    }
+}

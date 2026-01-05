@@ -1,0 +1,65 @@
+.pastor-section-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack image on top */
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.pastor-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pastor-image-placeholder {
+    width: 200px;
+    /* Smaller, circular */
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    /* Circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    box-shadow: var(--shadow);
+    border: 4px solid var(--secondary);
+    overflow: hidden;
+    /* Ensure image stays in circle */
+}
+
+/* Add style for image if later replaced with <img> tag */
+.pastor-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pastor-text {
+    max-width: 800px;
+    /* Limit width for readability */
+}
+
+.pastor-name {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.pastor-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.signature {
+    font-weight: 600;
+    color: var(--text-dark) !important;
+}
+
+/* Remove media query since it's now always stacked */
