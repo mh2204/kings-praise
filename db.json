@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Worship Night",
+      "date": "2025-12-24",
+      "time": "6:00 PM",
+      "description": "Join us for a special Christmas Eve worship experience."
+    },
+    {
+      "id": 2,
+      "title": "Community Outreach",
+      "date": "2025-12-30",
+      "time": "10:00 AM",
+      "description": "Providing food and clothes to the community in Longonot."
+    }
+  ],
+  "sermons": [
+    {
+      "id": 1,
+      "title": "The Power of Grace",
+      "preacher": "Pastor John",
+      "date": "2025-12-10",
+      "youtubeId": "dQw4w9WgXcQ",
+      "description": "Understanding God's unmerited favor."
+    },
+    {
+      "id": 2,
+      "title": "Walking in Faith",
+      "preacher": "Pastor Jane",
+      "date": "2025-12-03",
+      "youtubeId": "M7lc1UVf-VE",
+      "description": "How to trust God in difficult times."
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1767608125946,
+      "title": "prayer centre",
+      "date": "2026-01-05T10:15:25.937Z",
+      "imageUrl": "/uploads/1767608125911",
+      "description": "our prayer centre"
+    },
+    {
+      "id": 1767608319652,
+      "title": "church front view",
+      "date": "2026-01-05T10:18:39.622Z",
+      "imageUrl": "/uploads/1767608319601.png",
+      "description": ""
+    },
+    {
+      "id": 1767608417861,
+      "title": "men's ministry",
+      "date": "2026-01-05T10:20:17.838Z",
+      "imageUrl": "/uploads/1767608417825.jpeg",
+      "description": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 1767606166387,
+      "username": "admin",
+      "password": "$2b$10$gFAeqaxYAV3saajrx7vF5.AQky71W25RH6QvtKNcah2JI2D2yAAFq",
+      "role": "admin"
+    }
+  ]
+}
