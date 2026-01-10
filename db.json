@@ -15,24 +15,7 @@
       "description": "Providing food and clothes to the community in Longonot."
     }
   ],
-  "sermons": [
-    {
-      "id": 1767692421303,
-      "title": "Power of prayer",
-      "preacher": "vlad",
-      "date": "2025-12-31",
-      "youtubeId": "uULY8AB9SSk",
-      "description": ""
-    },
-    {
-      "id": 1767692912405,
-      "title": " THE BENEFITS OF SERVING GOD ",
-      "preacher": "BISHOP DAVID OYEDEPO",
-      "date": "2024-03-17",
-      "youtubeId": "ttTliCkeZig",
-      "description": ""
-    }
-  ],
+  "sermons": [],
   "gallery": [
     {
       "id": 1767608125946,
