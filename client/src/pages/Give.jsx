@@ -21,7 +21,7 @@ const Give = () => {
                             <p>Kings Praise Church</p>
                         </div>
                         <p className="step-note">1. Go to M-Pesa &gt; Lipa na M-Pesa &gt; Buy Goods and Services</p>
-                        <p className="step-note">2. Enter Till Number: <strong>123 456</strong></p>
+                        <p className="step-note">2. Enter Till Number: <strong>8860514</strong></p>
                         <p className="step-note">3. Enter Amount and PIN</p>
                     </div>
 
