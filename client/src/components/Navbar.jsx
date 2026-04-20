@@ -11,8 +11,8 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
-                    <img src={import.meta.env.BASE_URL + "vite.svg"} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
-                    KINGS PRAISE
+                    <img src={import.meta.env.BASE_URL + "vite.svg"} alt="Logo" style={{ height: '60px', marginRight: '15px' }} />
+                    KINGS PRAISE CHURCH
                 </Link>
 
                 <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
