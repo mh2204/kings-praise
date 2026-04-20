@@ -22,12 +22,13 @@
 .navbar-logo {
     color: var(--primary);
     font-family: var(--font-body);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .menu-icon {
