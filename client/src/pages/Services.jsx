@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import './Pages.css';
+import React, { useState, useEffect } from 'react';
+import { fetchContent } from '../apiConfig';
 
 const Services = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/events')
-            .then(res => res.json())
+        fetchContent('events')
             .then(data => setEvents(data))
             .catch(err => console.error('Error fetching events:', err));
     }, []);

@@ -54,7 +54,7 @@ const About = () => {
                         <h2>Pastoral Leadership</h2>
                         <div className="pastor-card">
                             <div className="pastor-img-container" style={{ width: '200px', height: '200px', margin: '0 auto 1rem', borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--secondary)' }}>
-                                <img src="/pasi.png" alt="Reverend Njeri Gatama" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={import.meta.env.BASE_URL + "pasi.png"} alt="Reverend Njeri Gatama" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3>Reverend Njeri Gatama</h3>
                             <p>Senior Pastor</p>

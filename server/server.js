@@ -14,6 +14,7 @@ const sermonsRouter = require('./routes/sermons');
 const authRouter = require('./routes/auth');
 const uploadRouter = require('./routes/upload');
 const galleryRouter = require('./routes/gallery');
+const contactRouter = require('./routes/contact');
 
 // Basic Route
 app.get('/', (req, res) => {
@@ -28,6 +29,7 @@ app.use('/api/sermons', sermonsRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/upload', uploadRouter);
 app.use('/api/gallery', galleryRouter);
+app.use('/api/contact', contactRouter);
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

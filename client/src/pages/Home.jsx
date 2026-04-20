@@ -11,7 +11,7 @@ const Home = () => {
             <Hero />
 
             <section className="section intro-section container text-center">
-                <h2>Welcome to Kings Praise Church</h2>
+                <h2>Welcome to KINGS PRAISE CHURCH</h2>
                 <p className="lead-text">
                     “A Place of Joyful Worship and Grace — Connecting Hearts, Transforming Lives.”
                 </p>

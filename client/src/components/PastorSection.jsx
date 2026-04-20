@@ -7,7 +7,7 @@ const PastorSection = () => {
             <div className="pastor-section-content">
                 <div className="pastor-image-wrapper">
                     <div className="pastor-image-placeholder">
-                        <img src="/pasi.png" alt="Pastor" />
+                        <img src={import.meta.env.BASE_URL + "pasi.png"} alt="Pastor" />
                     </div>
                 </div>
                 <div className="pastor-text">

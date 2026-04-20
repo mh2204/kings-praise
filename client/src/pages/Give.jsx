@@ -17,7 +17,7 @@ const Give = () => {
                         <h2>M-Pesa Buy Goods</h2>
                         <div className="mpesa-details">
                             <p>Till Number:</p>
-                            <h3 className="highlight-number">123 456</h3>
+                            <h3 className="highlight-number">8860514</h3>
                             <p>Kings Praise Church</p>
                         </div>
                         <p className="step-note">1. Go to M-Pesa &gt; Lipa na M-Pesa &gt; Buy Goods and Services</p>

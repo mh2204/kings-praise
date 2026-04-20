@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import './Pages.css';
+import React, { useState, useEffect } from 'react';
+import { fetchContent, getImageUrl } from '../apiConfig';
 
 const Gallery = () => {
     const [photos, setPhotos] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/gallery')
-            .then(res => res.json())
+        fetchContent('gallery')
             .then(data => setPhotos(data))
             .catch(err => console.error('Error fetching gallery:', err));
     }, []);
@@ -35,7 +34,7 @@ const Gallery = () => {
                         photos.map(photo => (
                             <div key={photo.id} className="gallery-card" onClick={() => openLightbox(photo)}>
                                 <div className="gallery-img-container">
-                                    <img src={`http://localhost:5000${photo.imageUrl}`} alt={photo.title} />
+                                    <img src={getImageUrl(photo.imageUrl)} alt={photo.title} />
                                 </div>
                                 <div className="gallery-info">
                                     <h3>{photo.title}</h3>
@@ -53,7 +52,7 @@ const Gallery = () => {
                 <div className="lightbox-overlay" onClick={closeLightbox}>
                     <div className="lightbox-content" onClick={e => e.stopPropagation()}>
                         <button className="close-lightbox" onClick={closeLightbox}>&times;</button>
-                        <img src={`http://localhost:5000${selectedImage.imageUrl}`} alt={selectedImage.title} />
+                        <img src={getImageUrl(selectedImage.imageUrl)} alt={selectedImage.title} />
                         <div className="lightbox-caption">
                             <h3>{selectedImage.title}</h3>
                             <p>{selectedImage.description}</p>

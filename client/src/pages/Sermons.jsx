@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import YoutubeEmbed from '../components/YoutubeEmbed';
-import './Pages.css';
+import { fetchContent } from '../apiConfig';
 
 const Sermons = () => {
     const [sermons, setSermons] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/sermons')
-            .then(res => res.json())
+        fetchContent('sermons')
             .then(data => setSermons(data))
             .catch(err => console.error('Error fetching sermons:', err));
     }, []);

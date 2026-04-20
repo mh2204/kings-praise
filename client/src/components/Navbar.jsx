@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
-                    <img src="/vite.svg" alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
+                    <img src={import.meta.env.BASE_URL + "vite.svg"} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
                     Kings Praise
                 </Link>
 
