@@ -9,10 +9,13 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="container navbar-container">
+            <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
-                    <img src={import.meta.env.BASE_URL + "vite.svg"} alt="Logo" style={{ height: '60px', width: '60px', marginRight: '15px', borderRadius: '50%', objectFit: 'cover' }} />
-                    KINGS PRAISE CHURCH
+                    <img src={import.meta.env.BASE_URL + "vite.svg"} alt="Logo" style={{ height: '50px', width: '50px', marginRight: '10px', borderRadius: '50%', objectFit: 'cover' }} />
+                    <div className="logo-text">
+                        <div className="logo-title">KINGS PRAISE CHURCH</div>
+                        <div className="logo-subtitle">AND PRAYER CENTER</div>
+                    </div>
                 </Link>
 
                 <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
